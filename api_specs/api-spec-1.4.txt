@@ -1,4 +1,7 @@
-# straight from http://c-mobberley.com/wordpress/2014/09/28/interacting-with-the-hidden-tado-thermostat-api/
+# API Version 1.4
+#
+# source: http://c-mobberley.com/wordpress/2014/09/28/interacting-with-the-hidden-tado-thermostat-api/
+
 POST: /updateLocation
 request:
 {
