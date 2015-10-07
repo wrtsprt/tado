@@ -4,7 +4,7 @@ require 'json'
 class Tado
   include HTTParty
 
-  def initialize(username, password, api_version)
+  def initialize(username, password, api_version = '1.9')
     @username = username
     @password = password
     @default_options = { query: { username: @username, password: @password } }
