@@ -22,3 +22,21 @@ puts "\n\n"
 
 ########
 
+puts "GET: /getAppUsers"
+puts "request {"
+app_users = tado.getAppUsers
+
+app_users.keys.each do |key|
+  if key == 'appUsers'
+    app_users[key].first.keys.each do |subkey|
+      puts "  #{subkey}: \"\","
+    end
+  else
+    puts "#{key}: \"\","
+  end
+end
+
+puts "}"
+puts "\n\n"
+
+
