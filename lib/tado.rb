@@ -14,6 +14,7 @@ class Tado
     @api_client.getCurrentState.each do |k, v|
       puts "#{k} : #{v}"
     end
+    "\n"
   end
 
 
