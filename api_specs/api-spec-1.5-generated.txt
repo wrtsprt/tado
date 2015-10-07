@@ -1,0 +1,43 @@
+# Tado API spec Version 1.5
+#
+
+GET: /getCurrentState
+request {
+success: "",
+operation: "",
+preheating: "",
+preheatingTargetOperation: "",
+autoOperation: "",
+operationTrigger: "",
+insideTemp: "",
+setPointTemp: "",
+controlPhase: "",
+currentUserPrivacyEnabled: "",
+currentUserGeoStale: "",
+deviceUpdating: "",
+homeId: "",
+heatingOn: "",
+internetGatewayType: "",
+internetGatewayConnected: "",
+heatingMuscleType: "",
+heatingMuscleConnected: "",
+insideTemperatureSensorType: "",
+insideTemperatureSensorConnected: "",
+settingsEnabled: "",
+fallbackOperation: "",
+helpUrl: "",
+pendingDeviceInstallation: "",
+}
+
+
+GET: /getThermostatSettings
+# requires device to be isntalled
+request {
+DEBUG:
+{"success"=>false, "message"=>"Gone! This version of the API is no longer supported, please update your app."}
+:DEBUG
+success: "",
+message: "",
+}
+
+

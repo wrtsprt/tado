@@ -1,0 +1,32 @@
+# Tado API spec Version 1.9
+#
+
+GET: /getCurrentState
+request {
+success: "",
+operation: "",
+preheating: "",
+preheatingTargetOperation: "",
+autoOperation: "",
+operationTrigger: "",
+insideTemp: "",
+setPointTemp: "",
+controlPhase: "",
+currentUserPrivacyEnabled: "",
+currentUserGeoStale: "",
+deviceUpdating: "",
+homeId: "",
+heatingOn: "",
+internetGatewayType: "",
+internetGatewayConnected: "",
+heatingMuscleType: "",
+heatingMuscleConnected: "",
+insideTemperatureSensorType: "",
+insideTemperatureSensorConnected: "",
+settingsEnabled: "",
+fallbackOperation: "",
+helpUrl: "",
+pendingDeviceInstallation: "",
+}
+
+

@@ -1,0 +1,34 @@
+# Tado API spec Version 1.4
+#
+
+GET: /getCurrentState
+request {
+success: "",
+operation: "",
+autoOperation: "",
+operationTrigger: "",
+insideTemp: "",
+setPointTemp: "",
+controlPhase: "",
+boxConnected: "",
+gwConnected: "",
+tsConnected: "",
+currentUserPrivacyEnabled: "",
+currentUserGeoStale: "",
+deviceUpdating: "",
+homeId: "",
+pendingDeviceInstallation: "",
+}
+
+
+GET: /getThermostatSettings
+# requires device to be isntalled
+request {
+DEBUG:
+{"success"=>false, "message"=>"Gone! This version of the API is no longer supported, please update your app."}
+:DEBUG
+success: "",
+message: "",
+}
+
+
