@@ -1,7 +1,7 @@
 require 'httparty'
 require 'json'
 
-class Tado
+class TadoApiClient
   include HTTParty
   base_uri 'https://my.tado.com/mobile/1.4'
 
