@@ -46,6 +46,8 @@ if ARGV.last == 'current_temperature'
   puts tado.current_temperature
 elsif ARGV.last == 'status'
   puts tado.status
+elsif ARGV.last == 'heating_on'
+  puts tado.heating_on?
 else
   puts "nothing to do here"
 end

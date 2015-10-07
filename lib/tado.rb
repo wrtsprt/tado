@@ -10,6 +10,10 @@ class Tado
     @api_client.getCurrentState["insideTemp"]
   end
 
+  def heating_on?
+    @api_client.getCurrentState["heatingOn"]
+  end
+
   def status
     @api_client.getCurrentState.each do |k, v|
       puts "#{k} : #{v}"
