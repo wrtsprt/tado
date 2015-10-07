@@ -1,7 +1,7 @@
-require_relative 'tado'
+require_relative 'tado_api_client'
 
 @version = '1.9'
-@tado = Tado.new(ENV['tado_username'], ENV['tado_password'], @version)
+@tado = TadoApiClient.new(ENV['tado_username'], ENV['tado_password'], @version)
 
 
 def header
@@ -17,6 +17,8 @@ def endpoint(path, method)
   puts "}"
 
   response = @tado.send path
+
+  puts response.inspect
   puts "response {"
 
   response.keys.each do |key|
@@ -68,4 +70,7 @@ end
 
 puts "}"
 puts "\n\n"
+
+#######
+
 

@@ -1,7 +1,7 @@
 require 'httparty'
 require 'json'
 
-class Tado
+class TadoApiClient
   include HTTParty
 
   def initialize(username, password, api_version = '1.9')
