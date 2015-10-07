@@ -1,12 +1,13 @@
 # Tado Thermostat API client
 
-THIS CODE IS VERY ALPHA, PLEASE DON'T EXPECT IT TO WORK.
+**THIS CODE IS VERY ALPHA, PLEASE DON'T EXPECT IT TO WORK**. 
 
 This code implements an UNOFFICIAL ruby wrapper around the API of tado.com the company
 producing smart thermostats and smart AC controls.
 
-All initial research on the API (1.4) was done by http://c-mobberley.com/wordpress/author/hardware\_hacks/
-(see http://c-mobberley.com/wordpress/2014/09/28/interacting-with-the-hidden-tado-thermostat-api/).
+There is no official documentation about the API. All initial research on the API (1.4) was done by
+[hardware_hacks](http://c-mobberley.com/wordpress/author/hardware_hacks/)
+(see [interacting with the hidden tado thermostat api](http://c-mobberley.com/wordpress/2014/09/28/interacting-with-the-hidden-tado-thermostat-api/)).
 
 # Current API version
 
