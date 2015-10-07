@@ -20,6 +20,10 @@ class Tado
     JSON.parse self.class.get('/getAppUsers', @default_options).body
   end
 
+  def getAppUserSettings
+    JSON.parse self.class.get('/getAppUserSettings', @default_options).body
+  end
+
   # @deprecated
   def getThermostatSettings
     JSON.parse self.class.get('/getThermostatSettings', @default_options).body
