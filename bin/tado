@@ -1,0 +1,52 @@
+#!/usr/bin/env ruby
+
+# This is completely ripped off httparty.
+
+
+require "optparse"
+require "pp"
+
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "/../lib"))
+require "tado"
+
+opts = {}
+
+OptionParser.new do |o|
+  o.banner = "USAGE: #{$PROGRAM_NAME} [options] command"
+
+  o.on("-u n", "--username n", "Username for tado.com") do |username|
+    opts[:username] = username
+  end
+
+  o.on("-p n", "--password n", "Password for tado.com") do |password|
+    opts[:password] = password
+  end
+
+  o.on("-h", "--help", "Show help documentation") do |h|
+    puts o
+    exit
+  end
+
+  o.on("--version", "Show Tado version") do |ver|
+    puts "0.0000001"
+    exit
+  end
+end.parse!
+
+if ARGV.empty?
+  STDERR.puts "You need to provide a command"
+  STDERR.puts "USAGE: #{$PROGRAM_NAME} [options] command"
+  exit
+end
+
+
+tado = Tado.new(opts[:username], opts[:password])
+
+if ARGV.last == 'current_temperature'
+  puts tado.current_temperature
+elsif ARGV.last == 'status'
+  puts tado.status
+else
+  puts "nothing to do here"
+end
+
