@@ -1,6 +1,6 @@
 # Tado Thermostat API client
 
-**THIS CODE IS VERY ALPHA, PLEASE DON'T EXPECT IT TO WORK**. 
+**THIS CODE IS VERY ALPHA, PLEASE DON'T EXPECT IT TO WORK**.
 
 This code implements an UNOFFICIAL ruby wrapper around the API of tado.com the company
 producing smart thermostats and smart AC controls.
@@ -14,9 +14,7 @@ There is no official documentation about the API. All initial research on the AP
 The current (2015/10) version of the API seems to be 1.9. (Though 1.99, 1.999, 1.9999 also work, giving the same result).
 2.0 doesn't return anything for the moment.
 
-# Realated projects
-
-A couple of related projects.
+# Related projects
 
 ## Tado
 
